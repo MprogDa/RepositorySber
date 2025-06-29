@@ -3,10 +3,11 @@ import java.util.Scanner;
 
 import unit1.Unit1;
 import unit2.StartUnit2;
+import unit3.PaintExample;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.print("Выбор задания\n1. Unit1 (25.06.2025 - 10 заданий)\n2. Unit2 (26.06.2025 - 5 классов)\nЗадание: ");
+        System.out.print("Выбор задания\n1. Unit1 (25.06.2025 - 10 заданий)\n2. Unit2 (26.06.2025 - 5 классов)\n3. Unit3 (27.06.2025 - классы с наследование)\nЗадание: ");
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         switch (a){
@@ -15,6 +16,9 @@ public class Main {
                 break;
             case 2:
                 StartUnit2.Start();
+                break;
+            case 3:
+                PaintExample.pointMain();
                 break;
             default:
                 System.out.print("Такого задания нет");
