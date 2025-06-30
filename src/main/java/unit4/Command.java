@@ -21,7 +21,7 @@ public class Command {
         return Descr;
     }
 
-    public void commandPass() {
-
+    public boolean commandPass() {
+        return false;
     }
 }

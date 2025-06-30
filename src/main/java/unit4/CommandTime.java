@@ -11,8 +11,9 @@ public class CommandTime extends Command {
     }
 
     @Override
-    public void commandPass() {
+    public boolean commandPass() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
         System.out.println(LocalTime.now().format(formatter));
+        return false;
     }
 }
