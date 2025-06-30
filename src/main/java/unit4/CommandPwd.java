@@ -7,7 +7,8 @@ public class CommandPwd extends Command {
     }
 
     @Override
-    public void commandPass() {
+    public boolean commandPass() {
         System.out.println(System.getProperty("user.dir"));
+        return false;
     }
 }

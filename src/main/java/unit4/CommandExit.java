@@ -5,4 +5,9 @@ public class CommandExit extends Command {
         setName("exit");
         setDescr(" - завершает работу приложения");
     }
+
+    @Override
+    public boolean commandPass() {
+        return true;
+    }
 }

@@ -9,8 +9,10 @@ public class Unit4Main {
                 new CommandTime(),
                 new CommandPwd(),
                 new CommandExit(),
-                new Commandhelp()
+                null
         };
+
+        commands[commands.length-1] = new Commandhelp(commands);
 
         Scanner scanner = new Scanner(System.in);
 
@@ -26,23 +28,14 @@ public class Unit4Main {
             }
 
             if(com != null){
-                if(com.getName().equals("help")){
-                    Commandhelp.commandPassHelp(commands);
-                    continue;
-                }
-                if(com.getName().equals("exit")){
-                    return;
-                }
-                com.commandPass();
+                boolean end = com.commandPass();
+                if(end) return;
             }
             else {
                 System.out.printf("Ошибка: неизвестная команда '%s'\n", str);
             }
 
-
         }
-
-
 
     }
 }

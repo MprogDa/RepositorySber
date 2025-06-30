@@ -10,7 +10,8 @@ public class CommandDate extends Command{
     }
 
     @Override
-    public void commandPass() {
+    public boolean commandPass() {
         System.out.println(LocalDate.now());
+        return false;
     }
 }
