@@ -6,7 +6,7 @@ import static org.junit.Assert.assertThrows;
 
 import unit5.unit5_2.*;
 
-public class unit5_2Tests {
+public class Unit5_2Tests {
     @Test
     public void testGet() {
         MyLinkedListGeneric<String> list = new MyLinkedListGeneric<> ();

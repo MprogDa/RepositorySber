@@ -6,9 +6,7 @@ import static org.junit.Assert.assertThrows;
 
 import unit5.unit5_4.*;
 
-import java.io.IOException;
-
-public class unit5_4Tests {
+public class Unit5_4Tests {
     @Test
     public void testString() {
         String str = TextCount.count("./src/main/java/unit5/unit5_4/textTest.txt");

@@ -6,7 +6,7 @@ import static org.junit.Assert.assertThrows;
 
 import unit5.unit5_1.*;
 
-public class unit5_1Tests {
+public class Unit5_1Tests {
 
     @Test
     public void testGet() {
