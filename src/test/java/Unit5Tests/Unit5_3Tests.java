@@ -8,7 +8,7 @@ import java.util.*;
 import unit5.unit5_3.*;
 
 
-public class unit5_3Tests {
+public class Unit5_3Tests {
     @Test
     public void testGet() {
         Map<Integer, String> m = new HashMap<>();
