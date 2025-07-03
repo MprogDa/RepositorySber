@@ -7,10 +7,11 @@ import unit3.PaintExample;
 import unit4.Unit4Main;
 import unit5.unit5_4.TextCount;
 import unit6.unit6_1.*;
+import unit7.*;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.print("Выбор задания\n1. Unit1 (25.06.2025 - 10 заданий)\n2. Unit2 (26.06.2025 - 5 классов)\n3. Unit3 (27.06.2025 - классы с наследованием)\n4. Unit4 (30.06.2025 - shell)\n5. Unit5 (01.07.2025)\n6. Unit6 (02.07.2025)\nЗадание: ");
+        System.out.print("Выбор задания\n1. Unit1 (25.06.2025 - 10 заданий)\n2. Unit2 (26.06.2025 - 5 классов)\n3. Unit3 (27.06.2025 - классы с наследованием)\n4. Unit4 (30.06.2025 - shell)\n5. Unit5 (01.07.2025)\n6. Unit6 (02.07.2025)\n7. Unit7 - ToDoList (03.07.2025)\nЗадание: ");
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         switch (a){
@@ -32,10 +33,12 @@ public class Main {
             case 6:
                 new Shell();
                 break;
+            case 7:
+                StartToDo.startUnit7();
+                break;
             default:
                 System.out.print("Такого задания нет");
                 break;
         }
-
     }
 }
